@@ -4,7 +4,7 @@
 
 This project is based on the following paper and its four main findings:
 
-Kunyi Ji, Zhongxiang Liu, Rujia Li, Xin Wang, Wei Wang, Teng Huang and Sisi Duan. "An Empirical Study of Strategic Timing Games in Ethereum." .
+"An Empirical Study of Strategic Timing Games in Ethereum" .
 
 Four findings of the paper:
 
