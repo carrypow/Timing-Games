@@ -15,8 +15,8 @@ Four findings of the paper:
 
 We use the open-source Ethereum codebase to set up a local testnet. The setup requires [Go](https://go.dev/doc/install) to be installed in advance.
 
-- **Consensus & Validators:** Prysm ([v6.0.4][https://github.com/OffchainLabs/prysm/releases/tag/v6.0.4])
-- **Execution Layer:** Geth ([v1.15.11][https://geth.ethereum.org/downloads])
+- **Consensus & Validators:** Prysm ([v6.0.4](https://github.com/OffchainLabs/prysm/releases/tag/v6.0.4))
+- **Execution Layer:** Geth ([v1.15.11](https://geth.ethereum.org/downloads))
 
 The test network supports up to 10,000 validators and five beacon nodes.
 
