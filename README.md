@@ -23,7 +23,7 @@ We establish 1200 validators for testing.
 
 * First, clone the repository.
 ```shell
-git clone repository
+git clone https://github.com/carrypow/Timing-Games.git
 ```
 
 * Next, start the testnet. The script will start one execution client geth, five beacon clients and four validator clients.
