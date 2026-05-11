@@ -4,7 +4,7 @@
 
 This project is based on the following paper and its four main findings:
 
-"An Empirical Study of Strategic Timing Games in Ethereum" .
+"Strategic Timing Games in Ethereum: An Empirical Study and Mitigation".
 
 Four findings of the paper:
 
