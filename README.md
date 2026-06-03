@@ -2,16 +2,17 @@
 
 <font size=4> 
 
-This project is based on the following paper and its four main findings:
+This project is based on the following paper and its five main findings:
 
 "Strategic Timing Games in Ethereum: An Empirical Study and Mitigation".
 
-Four findings of the paper:
+Five findings of the paper:
 
 - Our analysis using on-chain data shows that it is highly likely that some staking pools (each staking pool consists of collective stakes of many users), such as Kiln are playing timing games, and playing timing games is indeed profitable. 
 - Our analysis using both on-chain data and local empirical analysis shows that the main factor that affects the success rate of timing games is the time of delaying proposing the blocks. Specifically, delaying the block for a longer period of time is indeed more profitable, as it is often the case that a block with a higher MEV can be obtained. However, delaying the block for an even longer period of time has a risk of making the block reorganized and not included in the canonical chain, due to the honest reorg mechanism being made effective on Nov 2023. 
 - Our extensive local empirical analysis shows that two factors are closely related to the profit of playing the timing games: time of delaying blocks, and total available MEVs (called global MEV in this work). Specifically, longer delays generally increase the profit but also have the risk of losing all rewards. Meanwhile, the global MEV is closely related to the MEV each validator can get, but playing the game is still profitable regardless of the global MEV.
-- Our extensive local empirical analysis shows that any validator (or staking pool) can gain more profit by playing the timing game. However, the strategic advantage decreases as more validators adopt the same strategies. We further validate our empirical analysis via a game-theoretic analysis for a game between timing game players and non-players. Our study shows that an equilibrium exists when all validators play the timing games. 
+- Our extensive local empirical analysis shows that any validator (or staking pool) can gain more profit by playing the timing game. However, the strategic advantage decreases as more validators adopt the same strategies. We further validate our empirical analysis via a game-theoretic analysis for a game between timing game players and non-players. Our study shows that an equilibrium exists when all validators play the timing games.
+- We discuss several mitigation options via verifiable delay function (VDF). We show that our solution can greatly mitigate the problem by shrinking the time window of playing the game. Our preliminary experimentation shows that our solution creates little overhead to the performance of the system.
 
 We use the open-source Ethereum codebase to set up a local testnet. The setup requires [Go](https://go.dev/doc/install) to be installed in advance.
 
